@@ -6,13 +6,15 @@
     <title>Finance-Tracker</title>
     <link rel="stylesheet" href="style.css">
 </head>
+<script src="https://cdn.tailwindcss.com"></script>
+
 <body>
-    <div class="container">
-        <h1>Finance Tracker</h1>
-        <div id="balance">
+    <div class="bg-white p-4 pb-6 rounded-[7px] w-[70%]">
+        <h1 class="text-[40px] font-bold">Finance Tracker</h1>
+        <div class="" id="balance">
             <p>Current Balance</p>
-            <h1 id="amount">₹ 0.00</h1>
-            <div id="tracker">
+            <h1 id="amount">₹ 0.00</h1>.
+            <div class="grid grid-cols-1 sm:grid-cols-2" id="tracker">
                 <div id="income">
                     <h3>Income</h3>
                     <p id="incomeamount">₹0.00</p>
@@ -23,7 +25,7 @@
                 </div>
             </div>
         </div>
-        <div class="main">
+        <div class="grid grid-cols-1 md:grid-cols-2" id="main">
             <div class="trans">
                 <h2>Transactions</h2>
                 <ul id="transactionlist">
@@ -36,6 +38,8 @@
                     <div class="formgrp">
                         <label for="description">Description</label>
                         <input type="text" id="description" placeholder="Enter Description" required/>
+                        <label for="date">Date</label>
+                        <input type="date" id="date" required>
                     </div>
 
                     <div class="formgrp">
@@ -47,8 +51,8 @@
                 </form>
             </div>
         </div>
-
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
